@@ -1,0 +1,31 @@
+# ---- 构建输出 ----
+bin/
+obj/
+*.cache
+*.resources
+*.tlog
+*.obj
+*.pdb
+*.exe
+
+# ---- Visual Studio 用户文件 ----
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.log
+*.vsidx
+
+# ---- 编辑器 / 工具 ----
+.vscode/
+.idea/
+_ReSharper*/
+
+# ---- 说明 ----
+# packages/ 刻意不忽略：本项目使用旧式 packages.config，.csproj 的
+# NuGet 引用直接指向 packages\ 目录，保留才能离线还原编译。
+# *.dll 不做全局忽略，否则 packages 里的依赖也会被排掉；
+# 构建产物里的 DLL 由 bin/ 规则覆盖。
+# Cognex VisionPro 的 DLL 通过 ..\..\..\VisionPro 相对路径引用，
+# 位于仓库之外，不会被提交。
