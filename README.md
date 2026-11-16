@@ -1,4 +1,6 @@
-# 基于 VisionPro 与 PLC 的视觉检测系统
+# 基于机器视觉的冲压件尺寸检测系统设计
+
+**Design of a Die-Stamping Part Dimension Inspection System Based on Machine Vision**
 
 本科毕业设计：使用 WinForms + Cognex VisionPro 做视觉检测，通过 S7.Net 与西门子 S7-1200/1500 PLC 通信，模拟流水线连续检测。
 
